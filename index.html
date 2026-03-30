@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <div class="player">
+
+        <iframe src="https://www.youtube.com/embed/tS0iMGHHSWE?si=abzX_Vs1wVpK6GNG"></iframe>
+    
+        <!-- <video id="video" src="https://www.youtube.com/embed/tS0iMGHHSWE?si=abzX_Vs1wVpK6GNG"></video> -->
+
+        <!-- controls -->
+
+        <div class="controls">
+
+            <button id="play">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+
+            <!-- time duration -->
+            <span id="time"> 0:00 / 0:00</span>
+
+            <!--  volume range -->
+            <input type="range" id="volume" min="0" max="1" step="0.1">
+
+            <!-- full screen icon -->
+             <button id="full-screen">
+                <i class="fas fa-expand"></i>
+             </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+    
+</body>
+</html>
